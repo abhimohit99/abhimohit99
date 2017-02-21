@@ -46,7 +46,7 @@ div.tab a {
 
 /* Change background color of links on hover */
 div.tab a:hover {
-    background-color: #44B0D4;
+    background-color: #3879CF;
 }
 
 /* Create an active/current tablink class */
@@ -58,6 +58,6 @@ div.tab a:focus, .active {
 .tabcontent {
     display: none;
     padding: 6px 12px;
-    border: 1px solid #fff;
+    border: 1px solid red;
     border-top: none;
 }
