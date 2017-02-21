@@ -1,16 +1,15 @@
-ul.navBar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* Style the tab */
+div.tab {
     overflow: hidden;
-    background-color: #333;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
 }
 
-ul.navBar li {float:left;}
-
-ul.topnav li a {
-    display: inline-block;
-    color: #f2f2f2;
+/* Style the links inside the tab */
+div.tab a {
+    float: left;
+    display: block;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -18,39 +17,20 @@ ul.topnav li a {
     font-size: 17px;
 }
 
-ul.topnav li a:hover {background-color: #555;}
-ul.topnav li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-  ul.topnav li:not(:first-child) {display: none;}
-  ul.topnav li.icon {
-    float: right;
-    display: inline-block;
-  }
+/* Change background color of links on hover */
+div.tab a:hover {
+    background-color: #ddd;
 }
 
-@media screen and (max-width:680px) {
-  ul.topnav.responsive {position: relative;}
-  ul.topnav.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.topnav.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.topnav.responsive li a {
-    display: block;
-    text-align: left;
-  }
+/* Create an active/current tablink class */
+div.tab a:focus, .active {
+    background-color: #ccc;
 }
 
-function myFunction() {
-    var x = document.getElementById("navBar");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
