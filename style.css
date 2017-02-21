@@ -2,7 +2,7 @@
 div.tab {
     overflow: hidden;
     border: 1px solid black;
-    background-color: #44B0D4;
+    background-color: #ddd;
 }
 
 /* Style the links inside the tab */
@@ -19,7 +19,7 @@ div.tab a {
 
 /* Change background color of links on hover */
 div.tab a:hover {
-    background-color: #ddd;
+    background-color: #44B0D4;
 }
 
 /* Create an active/current tablink class */
