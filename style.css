@@ -1,3 +1,30 @@
+@font-face
+{
+    font-family:"Caviar Dreams";
+    src:url("font/CaviarDreams.ttf");
+}
+
+body, html {
+    height: 100%;
+    font-family: "Caviar Dreams";
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("WindowDroplets.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* TABS */
 /* Style the tab */
 div.tab {
     overflow: hidden;
@@ -24,7 +51,7 @@ div.tab a:hover {
 
 /* Create an active/current tablink class */
 div.tab a:focus, .active {
-    background-color: green;
+    background-color: #eee;
 }
 
 /* Style the tab content */
