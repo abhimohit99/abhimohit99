@@ -14,29 +14,30 @@
   <body>
     
     <div class="tab">
-  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'London')">London</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Paris')">Paris</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')">Home</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'About me')">About me</a>
+  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a>
 </div>
 
-<div id="London" class="tabcontent">
-  <h3>London</h3>
-  <p>London is the capital city of England.</p>
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Add stuff.</p>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>Paris</h3>
-  <p>Paris is the capital of France.</p> 
+<div id="Projects" class="tabcontent">
+  <h3>Projects</h3>
+  <p>Add resume/stuff.</p>
+</div>
+    
+<div id="About me" class="tabcontent">
+  <h3>About me</h3>
+  <p>Add stuff.</p> 
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>Tokyo</h3>
-  <p>Tokyo is the capital of Japan.</p>
-</div>
     
     
     <script>
-      function openCity(evt, cityName) {
+      function openTab(evt, tabName) {
     // Declare all variables
     var i, tabcontent, tablinks;
 
@@ -53,7 +54,7 @@
     }
 
     // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
 }
     </script>
