@@ -1,5 +1,3 @@
-
-<DOCTYPE! html>
 <html lang = "en-UK">
 
 <head>
@@ -11,9 +9,7 @@
 </head>
 
 <body>
-  <table>
-    <p> test </p>
-  </table>
+
   <p>This is a work in progress. Check back soon for an updated version :) </p>
 
 
