@@ -4,7 +4,7 @@ body, html {
 
 .parallax { 
     /* The image used */
-    background-image: url("Window Droplets.jpg");
+    background-image: url("Window%20droplets.jpg");
 
     /* Full height */
     height: 100%; 
