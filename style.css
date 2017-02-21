@@ -24,7 +24,7 @@ div.tab a:hover {
 
 /* Create an active/current tablink class */
 div.tab a:focus, .active {
-    background-color: #aaa;
+    background-color: #eee;
 }
 
 /* Style the tab content */
