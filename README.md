@@ -1,6 +1,4 @@
 
-# Redirect to my homepage [here](http://akaul.me/main.html).
-
 <DOCTYPE! html>
 <html lang = "en-UK">
 
