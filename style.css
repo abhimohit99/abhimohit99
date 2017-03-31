@@ -2,7 +2,16 @@
 {
     font-family:"Caviar Dreams";
     src:url("font/CaviarDreams.ttf");
+    
+    font-family:"Learning Curve";
+    src:url("LearningCurve.ttf");
 }
+
+
+h1 {
+    font-family:"Learning Curve";
+}
+
 
 body, html {
     height: 100%;
