@@ -30,7 +30,10 @@
 
 <div id="Home" class="tabcontent">
   <h3>Home</h3>
-  <p>Add stuff.</p>
+  <h1>Welcome.</h1>
+  {% if site.github.is_project_page %}
+        <p>This site is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+  {% endif %
 </div>
 
 <div id="Projects" class="tabcontent">
@@ -86,7 +89,7 @@
       </section>
       <footer>
         {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        <p>This site is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
       </footer>
     </div>
