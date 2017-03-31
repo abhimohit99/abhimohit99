@@ -2,8 +2,12 @@
 {
     font-family:"Caviar Dreams";
     src:url("fonts/CaviarDreams.ttf");
-    
+}
 
+@font-face
+{
+    font-family:"Learning Curve";
+    src:url("fonts/LearningCurve.ttf");   
 }
 
 
