@@ -34,14 +34,15 @@
 </script>
   
   <body>
+  
+    <img src="WindowDroplets.jpg" alt="My Photography" style="max-width: 100%; height: auto;">
+    
     
     <div class="tab">
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')">Home</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'About me')">About me</a>
-  <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a>
-</div>
-
-<img src="WindowDroplets.jpg" alt="My Photography">
+      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')">Home</a>
+      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'About me')">About me</a>
+      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a>
+    </div>  
     
     
 <div id="Home" class="tabcontent">
@@ -88,8 +89,6 @@
     
     <div class="wrapper">
       <header>
-        <h1>Welcome.</h1>
-
         {% if site.github.is_user_page %}
           <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
