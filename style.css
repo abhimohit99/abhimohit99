@@ -8,14 +8,13 @@
 }
 
 
-h1 {
-    font-family:"Learning Curve";
-}
-
-
 body, html {
     height: 100%;
-    font-family: "Caviar Dreams";
+    font-family:"Caviar Dreams";
+}
+
+h1 {
+    font-family:"Learning Curve";
 }
 
 .parallax { 
