@@ -140,27 +140,11 @@
           $('#next').show();
         }
       }else {
-        var scoreElem = displayScore();
         quiz.append(scoreElem).fadeIn();
         $('#next').hide();
         $('#prev').hide();
         $('#start').show();
       }
     });
-  }
-  
-  // Computes score and returns a paragraph element to be displayed
-    function displayScore() {
-    var score = $('<p>',{id: 'question'});
-    
-    var numCorrect = 0;
-    for (var i = 0; i < selections.length; i++) {
-      if (selections[i] === questions[i].correctAnswer) {
-        numCorrect++;
-      }
-    }
-    
-    score.append('You got ' + numCorrect + ' questions out of ' + questions.length + ' right!!!');
-    return score;
   }
 })();
