@@ -147,4 +147,19 @@
       }
     });
   }
+  
+    function displayScore() {
+    var score = $('<p>',{id: 'question'});
+    
+    var numCorrect = 0;
+    for (var i = 0; i < selections.length; i++) {
+      if (selections[i] === questions[i].yesAnswer) {
+        numCorrect++;
+      }
+    }
+    
+    score.append('You got ' + numCorrect + ' questions out of ' +
+                 questions.length + ' right!!!');
+    return score;
+  }
 })();
