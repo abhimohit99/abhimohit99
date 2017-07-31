@@ -9,27 +9,8 @@
     <meta name="viewport" content="width=device-width">
   </head>
 
+
 <body>
-
-
-<FORM method="POST"
-      onSubmit="return checkAnswer(this,'B');"
->
-
-<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
-A. Another name for Java<BR>
-
-<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
-B. A scripting language mostly for the web<BR>
-
-<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
-C. When you use Java without compiling<BR>
-
-<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
-
-</FORM>
-
-
 
 <SCRIPT language="JavaScript" type="text/javascript">
 
@@ -87,6 +68,23 @@ function checkAnswer(quizForm, theAnswer, urlRight, urlWrong)
   return false;
 }
 </SCRIPT>
+
+
+<FORM method="POST" onSubmit="return checkAnswer(this,'B');">
+
+<INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+A. Another name for Java<BR>
+
+<INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+B. A scripting language mostly for the web<BR>
+
+<INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+C. When you use Java without compiling<BR>
+
+<INPUT TYPE="SUBMIT" VALUE="Submit Answer">
+
+</FORM>
+
 
 </body>
 
