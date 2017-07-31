@@ -1,4 +1,5 @@
-What is JavaScript?
+<!DOCTYPE HTML>
+<html lang = "en_UK">
 
 <FORM method="POST"
       onSubmit="return checkAnswer(this,'B');"
