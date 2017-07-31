@@ -1,33 +1,33 @@
 (function() {
   var questions = [{
     question: "Do you like me as a person?",
-    choices: ['Yes', 'It's complicated', 'No'],
-    yesAnswer: 1
-    maybeAnswer: 2
+    choices: ['Yes', 'Complicated', 'No'],
+    yesAnswer: 1,
+    maybeAnswer: 2,
     noAnswer: 3
   }, {
     question: "Do you want someone who cares about you and helps you love yourself?",
-    choices: ['Yes', 'It's complicated', 'No'],
-    yesAnswer: 1
-    maybeAnswer: 2
+    choices: ['Yes', 'Complicated', 'No'],
+    yesAnswer: 1,
+    maybeAnswer: 2,
     noAnswer: 3
   }, {
     question: "Do you want someone who is attracted to you for who you truly are?",
-    choices: ['Yes', 'It's complicated', 'No'],
-    yesAnswer: 1
-    maybeAnswer: 2
+    choices: ['Yes', 'Complicated', 'No'],
+    yesAnswer: 1,
+    maybeAnswer: 2,
     noAnswer: 3
   }, {
     question: "Do you want someone who you can talk to about literally anything, including but not limited to: AI ethics, coworkers, philosophy?",
-    choices: ['Yes', 'It's complicated', 'No'],
-    yesAnswer: 1
-    maybeAnswer: 2
+    choices: ['Yes', 'Complicated', 'No'],
+    yesAnswer: 1,
+    maybeAnswer: 2,
     noAnswer: 3
   }, {
     question: "Do you want someone who will be there for you during your joys and make you happier, and hold your hand and hug you during your sorrows?",
-    choices: ['Yes', 'It's complicated', 'No'],
-    yesAnswer: 1
-    maybeAnswer: 2
+    choices: ['Yes', 'Complicated', 'No'],
+    yesAnswer: 1,
+    maybeAnswer: 2,
     noAnswer: 3
   }];
   
@@ -169,6 +169,7 @@
         numYes++;
       }
     }
+  }
 
   function displayMaybe() {
     var score = $('<p>',{id: 'question'});
