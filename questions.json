@@ -3,32 +3,22 @@
     question: "Do you like me as a person?",
     choices: ['Yes', 'Complicated', 'No'],
     yesAnswer: 1,
-    maybeAnswer: 2,
-    noAnswer: 3
   }, {
     question: "Do you want someone who cares about you and helps you love yourself?",
     choices: ['Yes', 'Complicated', 'No'],
     yesAnswer: 1,
-    maybeAnswer: 2,
-    noAnswer: 3
   }, {
     question: "Do you want someone who is attracted to you for who you truly are?",
     choices: ['Yes', 'Complicated', 'No'],
     yesAnswer: 1,
-    maybeAnswer: 2,
-    noAnswer: 3
   }, {
-    question: "Do you want someone who you can talk to about literally anything, including but not limited to: AI ethics, coworkers, philosophy?",
+    question: "Do you want someone who you can talk to about literally anything, including but not limited to: AI ethics, coworkers, philosophy, and ?",
     choices: ['Yes', 'Complicated', 'No'],
     yesAnswer: 1,
-    maybeAnswer: 2,
-    noAnswer: 3
   }, {
     question: "Do you want someone who will be there for you during your joys and make you happier, and hold your hand and hug you during your sorrows?",
     choices: ['Yes', 'Complicated', 'No'],
     yesAnswer: 1,
-    maybeAnswer: 2,
-    noAnswer: 3
   }];
   
   var questionCounter = 0; //Tracks question number
@@ -169,26 +159,7 @@
         numYes++;
       }
     }
-  }
-
-  function displayMaybe() {
-    var score = $('<p>',{id: 'question'});
-    
-    var numMaybe = 0;
-    for (var i = 0; i < selections.length; i++) {
-      if (selections[i] === questions[i].maybeAnswer) {
-        numMaybe++;
-      }
-    }
-    
-    if (numYes >= 3) {
-    	if (numYes == 5) {
-        	score.append('We are very different people but similar enough that we can form a unique bond. You said yes to all the questions I asked, and I am so so sure that we can be more than friends, because each of those questions represents parts of what it would be like being in a relationship with me. So, final question: would you make me the happiest person ever by agreeing to go out with me?');
-
-        }
-        else {
-    		score.append('We are very different people but similar enough that we can form a unique bond. You said yes to most of the questions, I asked, and this makes me believe we have so much potential to be more than friends, because each of those questions represents parts of what it would be like being in a relationship with me. So, final question: would you make me the happiest person ever by agreeing to go out with me?'); }
-        return score;
-    }
-  }
+    score.append('Test filler');
+    return score;
+ }
 })();
