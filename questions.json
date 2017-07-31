@@ -150,16 +150,17 @@
   }
   
   // Computes score and returns a paragraph element to be displayed
-  function displayYes() {
+    function displayScore() {
     var score = $('<p>',{id: 'question'});
     
-    var numYes = 0;
+    var numCorrect = 0;
     for (var i = 0; i < selections.length; i++) {
-      if (selections[i] === questions[i].yesAnswer) {
-        numYes++;
+      if (selections[i] === questions[i].correctAnswer) {
+        numCorrect++;
       }
     }
-    score.append('Test filler');
+    
+    score.append('You got ' + numCorrect + ' questions out of ' + questions.length + ' right!!!');
     return score;
- }
+  }
 })();
