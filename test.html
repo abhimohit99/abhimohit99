@@ -68,9 +68,7 @@
 	  <img src="Professional.jpg" alt="Professional" style="width:160px;height:500px">
 
 	</div>
-	  
-    
-    <h1>Hello, world!</h1>
+
 
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	  <script src="js/bootstrap.min.js"></script>
@@ -94,5 +92,28 @@
 		    evt.currentTarget.className += " active";
 		}
 	  </script>
+	  
+	   <div class="wrapper">
+      <header>
+        {% if site.github.is_user_page %}
+          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This site is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+      </footer>
+    </div>
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+	  
+	  
+	  
+	  
   </body>
 </html>
