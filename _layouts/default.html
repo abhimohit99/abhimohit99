@@ -1,91 +1,105 @@
-<!doctype html>
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Abhishek Kaul</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width">
   </head>
-  
-  <body>    
+  <body>
+    <!-- <nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Balance Web Development</a>
+		</div>
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">About</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Design</a></li>
+						<li><a href="#">Development</a></li>
+						<li><a href="#">Consulting</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav> -->
     
-    <div class="tab">
-      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')">Home</a>
-      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a>
-      <a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'About me')">About me</a>
+	  <div class="jumbotron">
+	    <div class="tab">
+      		<a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Home')">Home</a>
+      		<a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'Projects')">Projects</a>
+      		<a href="javascript:void(0)" class="tablinks" onclick="openTab(event, 'About me')">About me</a>
+	    </div>
+	  </div>
+    
+	<div id="Home" class="tabcontent">
+		<h1>Welcome</h1>
+		<br> Nice to see you here :) I'm currently sorting through content and things to add, but my résumé is available under the "Project" section for your perusal! 
+		<br>
+	  </div>
 
-    </div>  
-    
-    
-<div id="Home" class="tabcontent">
-  <h1>Welcome</h1>
-  <br>
-  Nice to see you here :) I'm currently sorting through content and things to add, but my résumé is available under the "Project" section for your perusal!
-  <br>
-</div>
+	  <div id="Projects" class="tabcontent">
+	   My <a href="Résumé.pdf"> résumé</a>.
+	  <br>
+	  <p>Content coming soon.</p>
+	</div>
 
-<div id="Projects" class="tabcontent">
-   My <a href="Résumé.pdf"> résumé</a>.
-  <br>
-  <p>Content coming soon.</p>
-</div>
-    
-<div id="About me" class="tabcontent">
+	<div id="About me" class="tabcontent">
 
-  <p>Content coming soon! Until then, here's a professional-looking picture of myself:</p>
-  <br>
-  <img src="Professional.jpg" alt="Professional" style="width:160px;height:500px">
-  
-</div>
+	  <p>Content coming soon! Until then, here's a professional-looking picture of myself:</p>
+	  <br>
+	  <img src="Professional.jpg" alt="Professional" style="width:160px;height:500px">
 
-    
-    
-    <script>
-      function openTab(evt, tabName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+	</div>
 
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
 
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the link that opened the tab
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-    </script>
-    
-    
-    
-    
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	   
+	  <script>
+		  function openTab(evt, tabName) {
+		    // Declare all variables
+		    var i, tabcontent, tablinks;
+		    // Get all elements with class="tabcontent" and hide them
+		    tabcontent = document.getElementsByClassName("tabcontent");
+		    for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		    }
+		    // Get all elements with class="tablinks" and remove the class "active"
+		    tablinks = document.getElementsByClassName("tablinks");
+		    for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		    }
+		    // Show the current tab, and add an "active" class to the link that opened the tab
+		    document.getElementById(tabName).style.display = "block";
+		    evt.currentTarget.className += " active";
+		}
+	  </script>
+	  
     <div class="wrapper">
-      <header>
-        {% if site.github.is_user_page %}
-          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-      </header>
       <section>
-
-      {{ content }}
-
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="style.css">
       </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This site is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
+      <footer>  
+        <p class="">This site is maintained by <a href="https://github.com/abhimohit99">abhimohit99</a></p>
       </footer>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
-
+      
+	  
   </body>
 </html>
