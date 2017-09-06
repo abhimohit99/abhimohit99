@@ -15,6 +15,7 @@ body, html {
     height: 100%;
     font-family:"Caviar Dreams";
     font-color:"white";
+    font-size:20px;
 }
 
 div.tab {
@@ -76,7 +77,7 @@ div.tab a:focus, .active {
 }
 
 
-.bg {
+/*.bg {
   background: url('WindowDroplets.jpg') no-repeat center center;
   position: fixed;
   width: 100%;
@@ -84,12 +85,12 @@ div.tab a:focus, .active {
   top:0;
   left:0;
   z-index: -1;
-}
+}*/
 
 .jumbotron {
   margin-bottom: 0px;
   height: 350px;
   color: white;
-  text-shadow: red 0.3em 0.3em 0.3em;
+  text-shadow: red 0.2em 0.2em 0.2em;
   background: transparent;
 }
