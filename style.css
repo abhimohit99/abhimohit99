@@ -73,7 +73,7 @@ div.tab a:focus, .active {
     padding: 6px 12px;
     border: 1px solid blue;
     border-top: none;
-    font-size:20px;
+    /*font-size:20px;*/
 }
 
 
