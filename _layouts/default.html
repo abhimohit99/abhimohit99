@@ -88,6 +88,15 @@
 		    document.getElementById(tabName).style.display = "block";
 		    evt.currentTarget.className += " active";
 		}
+		  
+		  var jumboHeight = $('.jumbotron').outerHeight();
+		  function parallax(){
+			  var scrolled = $(window).scrollTop();
+			  $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+		  }
+		  $(window).scroll(function(e){
+			  parallax();
+		  });
 	  </script>
 	  
     <div class="wrapper">
