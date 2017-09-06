@@ -15,7 +15,6 @@ body, html {
     height: 100%;
     font-family:"Caviar Dreams";
     font-color:"white";
-    font-size:20px;
 }
 
 div.tab {
@@ -74,6 +73,7 @@ div.tab a:focus, .active {
     padding: 6px 12px;
     border: 1px solid blue;
     border-top: none;
+    font-size:20px;
 }
 
 
