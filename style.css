@@ -22,7 +22,7 @@ div.tab {
     font-size:14px;
 }
 
-.parallax { 
+/*.parallax { 
     /* The image used */
     background-image: url("WindowDroplets.jpg");
 
@@ -34,7 +34,7 @@ div.tab {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+}*/
 
 
 /* TABS */
@@ -73,4 +73,23 @@ div.tab a:focus, .active {
     padding: 6px 12px;
     border: 1px solid blue;
     border-top: none;
+}
+
+
+.bg {
+  background: url("WindowDroplets.jpg") no-repeat center center;
+  position: fixed;
+  width: 100%;
+  height: 350px; /*same height as jumbotron */
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 350px;
+  color: white;
+  text-shadow: gold 0.3em 0.3em 0.3em;
+  background: transparent;
 }
