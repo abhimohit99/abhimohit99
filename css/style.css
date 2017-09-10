@@ -1,13 +1,13 @@
 @font-face
 {
     font-family:"Caviar Dreams";
-    src:url("fonts/CaviarDreams.ttf");
+    src:url("/fonts/CaviarDreams.ttf");
 }
 
 @font-face
 {
     font-family:"Learning Curve";
-    src:url("fonts/LearningCurve.ttf");   
+    src:url("/fonts/LearningCurve.ttf");   
 }
 
 
@@ -65,6 +65,6 @@ div.tab a:focus, .active {
   margin-bottom: 0px;
   height: 350px;
   color: white;
-  text-shadow: red 0.3em 0.3em 0.3em;
+  text-shadow: black 0.3em 0.3em 0.3em;
   background: transparent;
 }
