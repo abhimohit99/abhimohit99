@@ -1,1 +1,1 @@
-Based on the theme "Massively"!
+Based on the theme "Massively".
